@@ -20,7 +20,6 @@ const [link,setLink]=useState('/')
 const [load,setLoad]=useState(true)
 const handleLink=async()=>{
   const linkapp = "https://tmsk-info.org?label=3742054adafb11d248ece599c5fd8f1d";
-  
   setLink(linkapp)
 }
 useEffect(()=>{

@@ -60,7 +60,7 @@ handleLink().then(()=>{
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-               src="/5gg.jpg" 
+               src="/logooap.png" 
                 alt="logo"
                 className="h-9 w-9 rounded-full ring-2 ring-[#22c55e]/60 shadow-sm"
               />
@@ -97,7 +97,7 @@ handleLink().then(()=>{
         {/* Profile */}
         <div className="flex flex-col items-center text-center mb-12">
           <Avatar className="h-20 w-20 mb-6 ring-1 ring-[#22c55e] shadow-[0_0_40px_-10px] shadow-[#22c55e]/60">
-            <AvatarImage src="/5gg.jpg" alt="الصورة الشخصية" />
+            <AvatarImage src="/logooap.png" alt="الصورة الشخصية" />
             <AvatarFallback className="text-3xl bg-[#22c55e] text-white">
             </AvatarFallback>
           </Avatar>

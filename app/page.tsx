@@ -100,8 +100,11 @@ export default function HomePage() {
             <AvatarFallback className="text-3xl bg-white text-white">
             </AvatarFallback>
           </Avatar>
+          <h3 className="flex font-bold">
+            قائمة الخدمات<img src="/verified.png" alt="logo" width={25} />
 
-          <p className="mt-3 text-lg text-white/70 max-w-prose">
+          </h3>
+          <p className="mt-3 text-sm text-white/70 max-w-prose">
             تحكم بخطك، تسوق وادفع بأسلوب جديد وسهل
           </p>
         </div>

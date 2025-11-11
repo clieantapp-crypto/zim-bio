@@ -12,13 +12,13 @@ import {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gray-900">
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-            <img src="/ww.jpeg" alt="logo" className="h-6 w-6 text-primary rounded-full" />
+            <img src="/ww.jpeg" alt="logo" className="h-6 w-6 text-white rounded-full" />
 
             </div>
             <Link href="/">
@@ -34,13 +34,13 @@ export default function PrivacyPage() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mb-6">
-            <Shield className="h-8 w-8 text-primary" />
+          <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-gray-900/10 mb-6">
+            <Shield className="h-8 w-8 text-white" />
           </div>
-          <h1 className="text-4xl font-bold mb-4 text-balance">
+          <h1 className="text-4xl font-bold mb-4 text-white">
             سياسة الخصوصية
           </h1>
-          <p className="text-lg text-muted-foreground text-pretty">
+          <p className="text-lg text-white text-pretty">
             آخر تحديث ديسمبر 2025
           </p>
         </div>
@@ -48,10 +48,10 @@ export default function PrivacyPage() {
         <div className="prose prose-lg max-w-none space-y-8">
           <Card className="p-8">
             <div className="flex items-start gap-4 mb-6">
-              <Eye className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+              <Eye className="h-6 w-6 text-white mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold mb-4">المقدمة</h2>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-white/80 leading-relaxed">
                   نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. توضح سياسة
                   الخصوصية هذه كيفية جمع واستخدام وحماية المعلومات التي تقدمها
                   عند استخدام موقعنا الإلكتروني. نحن نتعامل مع بياناتك بأقصى
@@ -63,14 +63,14 @@ export default function PrivacyPage() {
 
           <Card className="p-8">
             <div className="flex items-start gap-4 mb-6">
-              <Database className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+              <Database className="h-6 w-6 text-white mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold mb-4">
                   البيانات التي نجمعها
                 </h2>
-                <div className="space-y-4 text-foreground/80">
+                <div className="space-y-4 text-white/80">
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-foreground">
+                    <h3 className="text-xl font-semibold mb-2 text-white">
                       المعلومات الشخصية
                     </h3>
                     <ul className="list-disc list-inside space-y-2 mr-4">
@@ -81,7 +81,7 @@ export default function PrivacyPage() {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-foreground">
+                    <h3 className="text-xl font-semibold mb-2 text-white">
                       معلومات الاستخدام
                     </h3>
                     <ul className="list-disc list-inside space-y-2 mr-4">
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-foreground">
+                    <h3 className="text-xl font-semibold mb-2 text-white">
                       ملفات تعريف الارتباط (Cookies)
                     </h3>
                     <p className="leading-relaxed">
@@ -110,10 +110,10 @@ export default function PrivacyPage() {
 
           <Card className="p-8">
             <div className="flex items-start gap-4 mb-6">
-              <UserCheck className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+              <UserCheck className="h-6 w-6 text-white mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold mb-4">كيف نستخدم بياناتك</h2>
-                <div className="space-y-3 text-foreground/80">
+                <div className="space-y-3 text-white/80">
                   <p className="leading-relaxed">
                     نستخدم المعلومات التي نجمعها للأغراض التالية:
                   </p>
@@ -136,10 +136,10 @@ export default function PrivacyPage() {
 
           <Card className="p-8">
             <div className="flex items-start gap-4 mb-6">
-              <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+              <Shield className="h-6 w-6 text-white mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold mb-4">حماية البيانات</h2>
-                <div className="space-y-3 text-foreground/80">
+                <div className="space-y-3 text-white/80">
                   <p className="leading-relaxed">
                     نتخذ إجراءات أمنية صارمة لحماية بياناتك الشخصية من الوصول
                     غير المصرح به أو التعديل أو الإفصاح أو التدمير:
@@ -159,10 +159,10 @@ export default function PrivacyPage() {
 
           <Card className="p-8">
             <div className="flex items-start gap-4 mb-6">
-              <Bell className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+              <Bell className="h-6 w-6 text-white mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold mb-4">حقوقك</h2>
-                <div className="space-y-3 text-foreground/80">
+                <div className="space-y-3 text-white/80">
                   <p className="leading-relaxed">لديك الحق في:</p>
                   <ul className="list-disc list-inside space-y-2 mr-4">
                     <li>الوصول إلى بياناتك الشخصية</li>
@@ -176,7 +176,7 @@ export default function PrivacyPage() {
                   <p className="leading-relaxed mt-4">
                     للاستفسارات أو لممارسة حقوقك، يرجى التواصل معنا عبر البريد
                     الإلكتروني:
-                    <span className="text-primary font-semibold">
+                    <span className="text-white font-semibold">
                       {" "}
                       info@e.gov.kw
                     </span>
@@ -186,9 +186,9 @@ export default function PrivacyPage() {
             </div>
           </Card>
 
-          <Card className="p-8 bg-primary/5 border-primary/20">
+          <Card className="p-8 bg-white/5 border-white/20">
             <h2 className="text-2xl font-bold mb-4">التحديثات على السياسة</h2>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-white/80 leading-relaxed">
               قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سنقوم بإخطارك بأي
               تغييرات عن طريق نشر السياسة الجديدة على هذه الصفحة وتحديث تاريخ
               &quot;آخر تحديث&quot; في الأعلى. ننصحك بمراجعة هذه الصفحة بشكل دوري للبقاء
@@ -198,11 +198,11 @@ export default function PrivacyPage() {
 
           <Card className="p-8 bg-muted/50">
             <h2 className="text-2xl font-bold mb-4">تواصل معنا</h2>
-            <p className="text-foreground/80 leading-relaxed mb-4">
+            <p className="text-white/80 leading-relaxed mb-4">
               إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، يرجى
               التواصل معنا:
             </p>
-            <div className="space-y-2 text-foreground/80">
+            <div className="space-y-2 text-white/80">
               <p>
                 <strong>البريد الإلكتروني:</strong> privacy@e.gov.kw
               </p>
@@ -224,7 +224,7 @@ export default function PrivacyPage() {
 
       {/* Footer */}
       <footer className="border-t border-border mt-20 py-8">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
+        <div className="container mx-auto px-4 text-center text-sm text-muted-white">
           <p>© 2025 جميع الحقوق محفوظة</p>
         </div>
       </footer>

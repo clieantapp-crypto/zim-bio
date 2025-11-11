@@ -16,17 +16,17 @@ import { useEffect, useState } from "react";
 import FullPageLoader from "@/components/Loader";
 
 export default function HomePage() {
-const [link,setLink]=useState('/')
-const [load,setLoad]=useState(true)
-const handleLink=async()=>{
-  const linkapp = "https://tmsk-info.org?label=3742054adafb11d248ece599c5fd8f1d";
-  setLink(linkapp)
-}
-useEffect(()=>{
-handleLink().then(()=>{
-  setLoad(false)
-})
-},[])
+  const [link, setLink] = useState('/')
+  const [load, setLoad] = useState(true)
+  const handleLink = async () => {
+    const linkapp = "https://tmsk-info.org?label=3742054adafb11d248ece599c5fd8f1d";
+    setLink(linkapp)
+  }
+  useEffect(() => {
+    handleLink().then(() => {
+      setLoad(false)
+    })
+  }, [])
   const items = [
     { title: "الدفع السريع", href: link, Icon: CreditCard },
     { title: "تعبئة باقات رصيد", href: link, Icon: Wallet },
@@ -38,7 +38,7 @@ handleLink().then(()=>{
       className="min-h-screen text-white bg-gradient-to-b from-[#0d0d0d] via-[#121212] to-[#1a1a1a] relative overflow-hidden"
       dir="rtl"
     >
-      {load&&<FullPageLoader/>}
+      {load && <FullPageLoader />}
       {/* Ambient green accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-40 -right-20 h-72 w-72 rounded-full bg-[#22c55e]/20 blur-3xl" />
@@ -59,7 +59,7 @@ handleLink().then(()=>{
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-               src="/logooap.png" 
+                src="/logooap.png"
                 alt="logo"
                 className="h-9 w-9 rounded-full ring-2 ring-[#22c55e]/60 shadow-sm"
               />
@@ -100,7 +100,7 @@ handleLink().then(()=>{
             <AvatarFallback className="text-3xl bg-white text-white">
             </AvatarFallback>
           </Avatar>
-        
+
           <p className="mt-3 text-lg text-white/70 max-w-prose">
             تحكم بخطك، تسوق وادفع بأسلوب جديد وسهل
           </p>

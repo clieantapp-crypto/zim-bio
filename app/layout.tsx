@@ -13,8 +13,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-         <head>
+    <html lang="ar">
+      <head>
+        <meta
+          name="keywords"
+          content="باقات زين, شحن رصيد زين, عروض زين, عروض زين للانترنت, عروض زين الكويت, zain kw, رصيد زين, باقات زين للانترنت, عروض زين نت, تعبئة رصيد زين, باقات زين مسبقة الدفع, شريحة زين, شركة زين الكويت, zain net package, باقات الإنترنت زين, عروض زين مسبقة الدفع, شحن زين, نت زين, شركة زين, عروض نت زين, طلب شريحة زين, عروض زين الشهرية, باقات زين للانترنت اللامحدود, انترنت زين"
+        />
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17690894312"></script>
         <script
           dangerouslySetInnerHTML={{

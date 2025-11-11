@@ -55,7 +55,7 @@ handleLink().then(()=>{
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-[#22c55e]/20 bg-[#0d0d0d]/70">
+      <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-white/20 bg-[#0d0d0d]/70">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -64,7 +64,7 @@ handleLink().then(()=>{
                 alt="logo"
                 className="h-9 w-9 rounded-full ring-2 ring-[#22c55e]/60 shadow-sm"
               />
-              <span className="text-sm text-[#22c55e] hidden sm:inline font-medium">
+              <span className="text-sm text-white hidden sm:inline font-medium">
                 لوحة الروابط
               </span>
             </div>
@@ -73,7 +73,7 @@ handleLink().then(()=>{
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-[#22c55e] hover:bg-[#22c55e]/20 hover:text-white"
+                  className="text-white hover:bg-white/20 hover:text-white"
                 >
                   سياسة الخصوصية
                 </Button>
@@ -82,7 +82,7 @@ handleLink().then(()=>{
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-[#22c55e] hover:bg-[#22c55e]/20 hover:text-white"
+                  className="text-white hover:bg-white/20 hover:text-white"
                 >
                   قواعد الأمان
                 </Button>
@@ -98,11 +98,11 @@ handleLink().then(()=>{
         <div className="flex flex-col items-center text-center mb-12">
           <Avatar className="h-20 w-20 mb-6 ring-1 ring-[#22c55e] shadow-[0_0_40px_-10px] shadow-[#22c55e]/60">
             <AvatarImage src="/logooap.png" alt="الصورة الشخصية" />
-            <AvatarFallback className="text-3xl bg-[#22c55e] text-white">
+            <AvatarFallback className="text-3xl bg-white text-white">
             </AvatarFallback>
           </Avatar>
         
-          <p className="mt-3 text-lg text-[#22c55e]/70 max-w-prose">
+          <p className="mt-3 text-lg text-white/70 max-w-prose">
             تحكم بخطك، تسوق وادفع بأسلوب جديد وسهل
           </p>
         </div>
@@ -118,22 +118,22 @@ handleLink().then(()=>{
                   aria-label={title}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-[#22c55e]/10 border border-[#22c55e]/30 flex items-center justify-center group-hover:bg-[#22c55e]/20 transition-colors">
+                    <div className="h-12 w-12 rounded-xl bg-white/10 border border-white/30 flex items-center justify-center group-hover:bg-white/20 transition-colors">
                       <Icon className="h-6 w-6 text-[#22c55e]" />
                     </div>
                     <div className="text-right">
                       <h3 className="font-semibold text-base text-white">
                         {title}
                       </h3>
-                      <p className="text-xs text-[#22c55e]/70 hidden sm:block">
+                      <p className="text-xs text-white/70 hidden sm:block">
                         انتقل الآن إلى الصفحة المقصودة
                       </p>
                     </div>
                   </div>
-                  <ExternalLink className="h-5 w-5 text-[#22c55e] group-hover:translate-x-0.5 transition-transform" />
+                  <ExternalLink className="h-5 w-5 text-white group-hover:translate-x-0.5 transition-transform" />
 
                   {/* subtle hover highlight */}
-                  <span className="pointer-events-none absolute inset-px rounded-[calc(theme(borderRadius.2xl)-1px)] bg-[#22c55e]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="pointer-events-none absolute inset-px rounded-[calc(theme(borderRadius.2xl)-1px)] bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
               </Card>
             </div>
@@ -143,32 +143,32 @@ handleLink().then(()=>{
         {/* Security */}
         <Card className="p-6 sm:p-7 bg-[#1f1f1f]/60 border-[#22c55e]/30">
           <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#22c55e]/10 border border-[#22c55e]/30">
-              <ShieldCheck className="h-5 w-5 text-[#22c55e]" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 border border-white/30">
+              <ShieldCheck className="h-5 w-5 text-white" />
             </div>
             <div className="text-right">
               <h3 className="font-semibold text-sm mb-2 text-white">
                 موقع آمن ومحمي
               </h3>
-              <p className="text-sm text-[#22c55e]/80 leading-relaxed">
+              <p className="text-sm text-white/80 leading-relaxed">
                 نحن نلتزم بحماية خصوصيتك وأمان بياناتك. جميع الروابط محمية
                 ومشفرة. يرجى مراجعة{" "}
                 <Link
                   href="/privacy"
-                  className="text-[#22c55e] underline-offset-4 hover:underline"
+                  className="text-white underline-offset-4 hover:underline"
                 >
                   سياسة الخصوصية
                 </Link>{" "}
                 و{" "}
                 <Link
                   href="/security"
-                  className="text-[#22c55e] underline-offset-4 hover:underline"
+                  className="text-white underline-offset-4 hover:underline"
                 >
                   قواعد الأمان
                 </Link>{" "}
                 لمزيد من المعلومات.
               </p>
-              <div className="mt-3 flex items-center gap-2 text-xs text-[#22c55e]/70">
+              <div className="mt-3 flex items-center gap-2 text-xs text-white/70">
                 <Lock className="h-4 w-4" />
                 <span>تشفير TLS • حماية من التتبع • أفضل ممارسات الأمان</span>
               </div>
@@ -178,20 +178,20 @@ handleLink().then(()=>{
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[#22c55e]/30 mt-20 py-8 bg-[#0d0d0d]/70 backdrop-blur">
-        <div className="container mx-auto px-4 text-center text-sm text-[#22c55e]">
+      <footer className="border-t border-white/30 mt-20 py-8 bg-[#0d0d0d]/70 backdrop-blur">
+        <div className="container mx-auto px-4 text-center text-sm text-white">
           <p>© 2025 جميع الحقوق محفوظة</p>
           <div className="flex items-center justify-center gap-4 mt-4">
             <Link
               href="/privacy"
-              className="hover:text-[#22c55e]/80 transition-colors"
+              className="hover:text-white/80 transition-colors"
             >
               سياسة الخصوصية
             </Link>
             <span>•</span>
             <Link
               href="/security"
-              className="hover:text-[#22c55e]/80 transition-colors"
+              className="hover:text-white/80 transition-colors"
             >
               قواعد الأمان
             </Link>
